@@ -41,20 +41,6 @@ public static class mergeintervals {
 
 public static void main(String[] args){
 
-    int[][] invs = new int[4][2];
-
-    invs[0][0] = 1;
-    invs[0][1] = 3;
-
-    invs[1][0] = 8;
-    invs[1][1] = 10;
-
-    invs[2][0] = 15;
-    invs[2][1] = 18;
-
-    invs[3][0] = 2;
-    invs[3][1] = 6;
-
     //System.out.println(invs[1][1]);
     mergeintervals x = new mergeintervals();
     int[][] test1 = new int[][]{{1,4},{0,2},{3,5}};
