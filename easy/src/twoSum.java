@@ -26,7 +26,7 @@ public class twoSum {
             }else{
                 map.put(diff,i);
             }
-            System.out.println(cur + " "  + diff + " " + i);
+            //System.out.println(cur + " "  + diff + " " + i);
 
 
         }
@@ -34,16 +34,10 @@ public class twoSum {
     }
     public static void main(String[] args){
 
-        int[] arr = new int[5];
-        arr[0] = 3;
-        arr[1] = 5;
-        arr[2] = 1;
-        arr[3] = 2;
-        arr[4] = 4;
-
+        int[] arr = new int[]{3,5,1,2,4};
 
         twoSum problem = new twoSum();
-        int[] res = problem.twoSum(arr,6);
+        int[] res = problem.twoSum(arr,7);
         System.out.println(res[0] + " " + res[1]);
     }
 }
