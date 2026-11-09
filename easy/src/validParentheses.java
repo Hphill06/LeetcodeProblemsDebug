@@ -1,6 +1,6 @@
-
-
-public static class validParentheses {
+import java.util.Stack;
+import java.util.HashMap;
+public class validParentheses {
         public boolean isValid(String s) {
             Stack<Character> st = new Stack<>();
             HashMap<Character,Character> pairs = new HashMap<>();
@@ -9,8 +9,6 @@ public static class validParentheses {
             pairs.put(')','(');
             pairs.put(']','[');
             pairs.put('}','{');
-
-
 
             for(char c : s.toCharArray()){
 
@@ -28,11 +26,12 @@ public static class validParentheses {
 
             return st.isEmpty();
         }
+    public static void main(String[] args){
+        validParentheses a = new validParentheses();
+
+
+        a.isValid("([)]");
+    }
 }
 
-public static void main(String[] args){
-    validParentheses a = new validParentheses();
 
-
-    a.isValid("([)]");
-}

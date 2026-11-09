@@ -1,5 +1,5 @@
 
-public static class palindromeint {
+public class palindromeint {
 
     public void palindromeint(){
 
@@ -31,9 +31,10 @@ public static class palindromeint {
         }
         return true;
     }
+    public static void main(String[] args){
+        palindromeint x = new palindromeint();
+        System.out.println(x.isPalindrome(41012014));
+    }
 }
 
-public static void main(String[] args){
-    palindromeint x = new palindromeint();
-    System.out.println(x.isPalindrome(41012014));
-}
+
